@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivales de Música</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <h1>Festivales de Música</h1>
+        <ul role="menubar">
+          <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+          <li role="none">
+            <a href="festivales.html" role="menuitem">Festivales Populares</a>
+          </li>
+          <li role="none">
+            <a href="consejos.html" role="menuitem">Consejos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h2 id="hero-title">
+        ¡Descubre los Mejores Festivales de Música del Mundo!
+      </h2>
+      <p>
+        Encuentra información útil sobre tus festivales favoritos y planea tu
+        próxima experiencia musical.
+      </p>
+      <a
+        href="festivales.html"
+        class="cta"
+        role="button"
+        aria-label="Explorar los festivales disponibles"
+      >
+        Explorar Festivales
+      </a>
+    </section>
+
+    <!-- Carrusel de Imágenes -->
+    <section class="imagenes-hero">
+      <h2>Explora Festivales Icónicos</h2>
+      <div class="imagenes-hero-container">
+        <img src="img/tomorrowland.jpg" alt="" />
+        <img src="img/coachella.png" alt="" />
+        <img src="img/palnorte.avif" alt="" />
+        <img src="img/edc.jpg" alt="" />
+      </div>
+    </section>
+
+    <section class="testimonios">
+      <div class="testimonios-wrapper">
+        <div class="testimonios-container">
+          <!-- Formulario de Suscripción -->
+          <div class="formulario">
+            <h3 id="formulario-titulo">¡Suscríbete para más Noticias!</h3>
+            <form aria-labelledby="formulario-titulo">
+              <label for="nombre">Nombre Completo:</label>
+              <input
+                type="text"
+                id="nombre"
+                name="nombre"
+                placeholder="Ingresa tu nombre completo"
+                required
+                aria-required="true"
+              />
+
+              <label for="email">Correo Electrónico:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Ingresa tu correo"
+                required
+                aria-required="true"
+              />
+
+              <label for="telefono">Número de Teléfono:</label>
+              <input
+                type="tel"
+                id="telefono"
+                name="telefono"
+                placeholder="Ingresa tu teléfono"
+              />
+
+              <label for="pais">País de Residencia:</label>
+              <select id="pais" name="pais">
+                <option value="mexico">México</option>
+                <option value="usa">Estados Unidos</option>
+                <option value="españa">España</option>
+                <option value="otros">Otros</option>
+              </select>
+
+              <label for="preferencias"
+                >¿Qué tipo de festivales prefieres?</label
+              >
+              <textarea
+                id="preferencias"
+                name="preferencias"
+                placeholder="Escribe tus preferencias"
+                rows="3"
+              ></textarea>
+
+              <button type="submit">Suscribirme</button>
+            </form>
+          </div>
+
+          <!-- Testimonios -->
+          <div class="comentarios">
+            <h3>¿Qué Dicen Nuestros Visitantes?</h3>
+            <div class="testimonial-card">
+              <p>
+                "¡Coachella fue mágico! Una experiencia que repetiré sin dudas."
+              </p>
+              <p>- Ana García</p>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "Tomorrowland superó todas mis expectativas. Lo recomiendo a
+                todos."
+              </p>
+              <p>- Luis Martínez</p>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "Tomorrowland superó todas mis expectativas. Lo recomiendo a
+                todos."
+              </p>
+              <p>- Luis Martínez</p>
+            </div>
+            <div class="testimonial-card">
+              <p>
+                "Tomorrowland superó todas mis expectativas. Lo recomiendo a
+                todos."
+              </p>
+              <p>- Luis Martínez</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuenta Regresiva -->
+    <section class="countdown" aria-live="polite">
+      <h2>¡El Próximo Festival Está Cerca!</h2>
+      <h3>¡Tecate Pal'Norte 2025!</h3>
+      <p id="countdown-timer">Cargando...</p>
+    </section>
+
+    <!-- Video del Festival -->
+    <section class="video-section">
+      <h2>¡Conoce Más Sobre el Festival!</h2>
+      <div class="video-container">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/WyXa5j5NST8?si=GPzjFUrdsDL1eg6H"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div class="audio-descriptivo">
+        <a
+          href="audDesc.html"
+          class="cta"
+          role="button"
+          aria-label="Acceder al texto del audio descriptivo del video"
+        >
+          Ver Audio Descriptivo
+        </a>
+      </div>
+    </section>
+
+    <!-- Galería -->
+    <section class="galeria">
+      <h2>Momentos Inolvidables</h2>
+      <div class="gallery-grid">
+        <img
+          src="img/img1.jpg"
+          alt="Dos jóvenes disfrutando de un concierto al aire libre entre una multitud, tomando selfies y abrazándose"
+        />
+        <img
+          src="img/img2.jpg"
+          alt="Multitud disfrutando de un festival nocturno con luces vibrantes, efectos visuales y una persona ondeando una bandera de México"
+        />
+        <img
+          src="img/img3.webp"
+          alt="Escenario iluminado con luces rojas en un concierto nocturno, rodeado de una multitud animada con manos levantadas"
+        />
+        <img
+          src="img/img4.avif"
+          alt="Escenario espectacular en un festival nocturno con fuegos artificiales, luces brillantes y humo rodeando a una multitud vibrante"
+        />
+        <img
+          src="img/img5.webp"
+          alt="Multitud disfrutando de un festival frente a un escenario elaborado con detalles dorados y luces vibrantes durante el atardecer"
+        />
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Festivales de Música. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+  </body>
+</html>

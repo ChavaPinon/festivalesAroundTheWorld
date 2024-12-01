@@ -1,0 +1,528 @@
+/* ----------------- General Body Styles ---------------- */
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* ------------------- Navbar -------------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background: linear-gradient(45deg, #ff9800, #ff5722);
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+.navbar h1 {
+  font-size: 1.5rem;
+}
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+.navbar a:hover {
+  background: #ff5722;
+}
+
+/* ---------------- Hero Section -------------------- */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url("images/hero-bg.jpg") no-repeat center center/cover;
+  color: #fff;
+}
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+.hero .cta {
+  display: inline-block;
+  background: #bc590d;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 25px;
+  transition: background 0.3s;
+}
+.hero .cta:hover {
+  background: #e64a19;
+}
+
+/* --------------- Section Titles ------------------ */
+h2 {
+  text-align: center;
+  margin: 2rem 0 1rem;
+  font-size: 2rem;
+  color: #ff9800;
+}
+
+/* ------------------- Carousel ---------------------- */
+.imagenes-hero-container {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+  gap: 1rem;
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 80%;
+}
+.imagenes-hero-container a {
+  text-decoration: none;
+}
+.imagenes-hero-container img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.imagenes-hero-container img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------ Testimonios Container ------------------  */
+.testimonios-wrapper {
+  background: #131313;
+  border: 1px solid #ff9800;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.testimonios-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+}
+.testimonial-card {
+  background: #282828;
+  padding: 1.5rem;
+  border-radius: 10px;
+  margin: 0.7rem auto;
+  max-width: 600px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.testimonial-card h4 {
+  margin-top: 1rem;
+  color: #ff9800;
+}
+
+/* -------------------- Formulario de Suscripción ------------------- */
+.formulario {
+  flex: 1;
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.formulario h3 {
+  text-align: left;
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.formulario label {
+  color: #fff;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea {
+  padding: 0.8rem;
+  border: 1px solid #ff9800;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #000;
+}
+
+.formulario textarea {
+  resize: none;
+}
+
+.formulario button {
+  background: #bc590d;
+  color: #fff;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.formulario button:hover {
+  background: #e64a19;
+}
+
+/* ------------------- Comentarios ------------------- */
+.comentarios {
+  flex: 1;
+}
+.comentarios h3 {
+  color: #ff9800;
+  text-align: center;
+}
+
+/* ------------------- Countdown ------------------------ */
+.countdown {
+  text-align: center;
+  padding: 2rem;
+  background: #1e1e1e;
+  color: #ff9800;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 1rem auto;
+  max-width: 600px;
+}
+
+#countdown-timer {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.countdown-item {
+  text-align: center;
+  background: #282828;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.countdown-item span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.countdown-item p {
+  margin: 0;
+  font-size: 1rem;
+  color: #ff9800;
+}
+
+/* -------------------- Gallery ------------------- */
+.galeria {
+  padding: 2rem;
+}
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 7rem;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.gallery-grid img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+.gallery-grid img:hover {
+  transform: scale(1.05);
+}
+
+/* ------------------- Footer ------------------- */
+footer {
+  text-align: center;
+  padding: 1rem 0;
+  background: #333;
+  color: #fff;
+  margin-top: 2rem;
+}
+
+/* ------------------- Pagina Festivales ------------------ */
+
+/* ---------------- Introducción ------------------- */
+.intro {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 800px;
+  color: #ff9800;
+}
+
+/* ------------------- Tabla de Festivales (Divs) --------------- */
+.tabla-festivales {
+  display: grid;
+  margin: 2rem auto;
+  max-width: 1000px;
+  border: 1px solid #ff9800;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.table-header {
+  display: grid;
+
+  background: #1e1e1e;
+  color: #ff9800;
+  font-weight: bold;
+  text-align: center;
+  height: 60px; /* Ajuste de altura */
+  align-items: center; /* Centra el contenido verticalmente */
+  border-bottom: 2px solid #ff9800;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* Coincide con el encabezado */
+  background: #121212;
+  color: #fff;
+  text-align: center;
+  align-items: center;
+  height: 60px;
+  border-top: 1px solid #ff9800;
+  transition: background 0.3s ease;
+}
+
+.table-row:hover {
+  background: #1e1e1e;
+}
+
+.cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 15px; /* Espaciado interno */
+  text-align: center;
+}
+
+/* Ajusta el espacio entre celdas e imágenes */
+.cell img.flag {
+  margin-right: 10px;
+  vertical-align: middle;
+  width: 20px;
+  height: auto;
+}
+
+.btn-info {
+  display: inline-block;
+  background: #cf3b00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn-info:hover {
+  background: #e64a19;
+}
+/* ----------------- Festivales Destacados ----------------- */
+.destacados {
+  margin: 3rem auto;
+  text-align: center;
+  max-width: 1200px;
+}
+
+.destacados h3 {
+  font-size: 30px;
+}
+
+.festival-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 1.5rem;
+}
+
+.festival-card {
+  display: flex;
+  align-items: center;
+  background: #1e1e1e;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+.festival-card img {
+  width: 120px;
+  height: auto;
+  border-radius: 10px;
+  margin-right: 1rem;
+}
+
+.card-content h4 {
+  color: #ff9800;
+  margin: 0;
+}
+
+.card-content p {
+  color: #fff;
+  margin: 0.5rem 0 0;
+}
+
+/* -------------------- Sección de Consejos ----------------- */
+.consejos {
+  text-align: center;
+  padding: 2rem;
+  background-color: #121212;
+  color: #fff;
+}
+
+.consejos h2 {
+  font-size: 2.5rem;
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+
+.consejos p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color: #ccc;
+}
+
+/* ------------------- Diseño en Grid -------------------- */
+.consejos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* ----------------- Tarjetas de Consejos ---------------- */
+.consejo-card {
+  background: #1e1e1e;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.consejo-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.consejo-card h3 {
+  font-size: 1.5rem;
+  color: #ff9800;
+  margin-bottom: 0.8rem;
+}
+
+.consejo-card p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* --------------- Video ------------ */
+.video {
+  text-align: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.video h2 {
+  color: #ff9800;
+  margin-bottom: 1rem;
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 450px;
+  border-radius: 10px;
+}
+
+/* --------------- Audio Desc boton ------------ */
+
+.audio-descriptivo {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.audio-descriptivo .cta {
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #bc590d;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.audio-descriptivo .cta:hover {
+  background-color: #da6b15;
+  transform: translateY(-2px);
+}
+
+.audio-descriptivo .cta:active {
+  background-color: #bc590d;
+  transform: translateY(0);
+}
+
+/* --------------- Audio Desc pag ------------ */
+
+.card {
+  background-color: #1e1e1e; /* Fondo oscuro para contraste */
+  color: #ffffff; /* Texto blanco */
+  border: 1px solid #444; /* Borde sutil */
+  border-radius: 8px; /* Bordes redondeados */
+  padding: 16px; /* Espaciado interno */
+  margin: 12px 0; /* Espaciado externo */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+}
+
+.card p {
+  margin: 0; /* Elimina márgenes extra del texto */
+  font-size: 16px; /* Tamaño de fuente claro */
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+
+.card strong {
+  color: #f8c12d; /* Resalta los tiempos en amarillo o dorado */
+}
+
+.audDescTitle {
+  color: #ff9800;
+  text-align: center;
+}

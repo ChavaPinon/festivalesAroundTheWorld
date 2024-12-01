@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Festivales Populares</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar" role="navigation" aria-label="Menú principal">
+        <h1>Festivales de Música</h1>
+        <ul role="menubar">
+          <li role="none"><a href="index.html" role="menuitem">Inicio</a></li>
+          <li role="none">
+            <a href="festivales.html" role="menuitem">Festivales Populares</a>
+          </li>
+          <li role="none">
+            <a href="consejos.html" role="menuitem">Consejos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introducción -->
+    <main>
+      <section class="intro">
+        <h2>Festivales Populares</h2>
+        <p>
+          Descubre algunos de los festivales de música más importantes y
+          emocionantes del mundo. Encuentra detalles sobre ubicación, fechas y
+          costos para que puedas planificar tu próxima aventura musical.
+        </p>
+      </section>
+
+      <!-- Tabla de Festivales transformada en DIVs -->
+      <!-- Tabla de Festivales transformada en DIVs -->
+      <section
+        class="tabla-festivales"
+        role="table"
+        aria-label="Información sobre festivales"
+      >
+        <!-- Encabezado de la tabla -->
+        <div role="rowgroup" class="table-header">
+          <div role="row" class="table-row header-row">
+            <div role="columnheader" aria-sort="none" class="cell">Nombre</div>
+            <div role="columnheader" class="cell">Ubicación</div>
+            <div role="columnheader" class="cell">Fechas</div>
+            <div role="columnheader" aria-sort="none" class="cell">
+              Costo Aproximado
+            </div>
+            <div role="columnheader" class="cell">Más Info</div>
+          </div>
+        </div>
+
+        <!-- Cuerpo de la tabla -->
+        <div role="rowgroup" class="table-body">
+          <div role="row" class="table-row">
+            <div id="festival" role="cell" class="cell">Coachella</div>
+            <div role="cell" class="cell">
+              <img src="img/us.png" alt="USA" class="flag" />
+              California, USA
+            </div>
+            <div role="cell" class="cell">15-17 Abril</div>
+            <div role="cell" class="cell">$500 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival lnk"
+                href="https://www.coachella.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival1" role="cell" class="cell">Tomorrowland</div>
+            <div role="cell" class="cell">
+              <img src="img/be.webp" alt="Bélgica" class="flag" />
+              Boom, Bélgica
+            </div>
+            <div role="cell" class="cell">20-22 Julio</div>
+            <div role="cell" class="cell">$350 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival1 lnk"
+                href="https://www.tomorrowland.com/home/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival2" role="cell" class="cell">Lollapalooza</div>
+            <div role="cell" class="cell">
+              <img src="img/us.png" alt="USA" class="flag" />
+              Chicago, USA
+            </div>
+            <div role="cell" class="cell">1-4 Agosto</div>
+            <div role="cell" class="cell">$400 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival2 lnk"
+                href="https://www.lollapalooza.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival3" role="cell" class="cell">Tecate Pal' Norte</div>
+            <div role="cell" class="cell">
+              <img src="img/mx.webp" alt="México" class="flag" />
+              Monterrey, México
+            </div>
+            <div role="cell" class="cell">31 Marzo - 1 Abril</div>
+            <div role="cell" class="cell">$120 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival3 lnk"
+                href="https://www.tecatepalnorte.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival4" role="cell" class="cell">Glastonbury</div>
+            <div role="cell" class="cell">
+              <img src="img/uk.webp" alt="Reino Unido" class="flag" />
+              Pilton, Reino Unido
+            </div>
+            <div role="cell" class="cell">21-25 Junio</div>
+            <div role="cell" class="cell">$335 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival4 lnk"
+                href="https://www.glastonburyfestivals.co.uk/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival5" role="cell" class="cell">Corona Capital</div>
+            <div role="cell" class="cell">
+              <img src="img/mx.webp" alt="México" class="flag" />
+              Ciudad de México, México
+            </div>
+            <div role="cell" class="cell">18-19 Noviembre</div>
+            <div role="cell" class="cell">$150 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival5 lnk"
+                href="https://www.coronacapital.com.mx/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival6" role="cell" class="cell">Fuji Rock</div>
+            <div role="cell" class="cell">
+              <img src="img/japon.webp" alt="Japón" class="flag" />
+              Niigata, Japón
+            </div>
+            <div role="cell" class="cell">28-30 Julio</div>
+            <div role="cell" class="cell">$270 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival6 lnk"
+                href="https://www.fujirockfestival.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival7" role="cell" class="cell">SXSW Music</div>
+            <div role="cell" class="cell">
+              <img src="img/us.png" alt="USA" class="flag" />
+              Austin, USA
+            </div>
+            <div role="cell" class="cell">10-19 Marzo</div>
+            <div role="cell" class="cell">$189 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival7 lnk"
+                href="https://www.sxsw.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+
+          <div role="row" class="table-row">
+            <div id="festival8" role="cell" class="cell">Primavera Sound</div>
+            <div role="cell" class="cell">
+              <img src="img/spain.webp" alt="España" class="flag" />
+              Barcelona, España
+            </div>
+            <div role="cell" class="cell">1-3 Junio</div>
+            <div role="cell" class="cell">$310 USD</div>
+            <div role="cell" class="cell">
+              <a
+                id="lnk"
+                aria-labelledby="festival8 lnk"
+                href="https://www.primaverasound.com/"
+                class="btn-info"
+                >Ver Más</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Festivales Destacados -->
+      <section class="destacados">
+        <h3>Festivales Destacados</h3>
+        <div class="festival-grid">
+          <div class="festival-card">
+            <img src="img/coachella.png" alt="Coachella" />
+            <div class="card-content">
+              <h4>Coachella</h4>
+              <p>
+                Uno de los festivales más icónicos del mundo, que reúne a los
+                mejores artistas en un ambiente vibrante en California.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/tomorrowland.jpg" alt="Tomorrowland" />
+            <div class="card-content">
+              <h4>Tomorrowland</h4>
+              <p>
+                Vive la magia de la música electrónica en el corazón de Bélgica
+                con espectáculos de nivel mundial.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/lollapalooza.png" alt="Festival Lollapalooza" />
+            <div class="card-content">
+              <h4>Lollapalooza</h4>
+              <p>
+                Lollapalooza es un festival icónico que se celebra en Chicago,
+                USA, ofreciendo una experiencia musical diversa con artistas de
+                diferentes géneros en un entorno vibrante y emocionante.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/palnorte.avif" alt="Festival Tecate Pal’Norte" />
+            <div class="card-content">
+              <h4>Tecate Pal’Norte</h4>
+              <p>
+                Tecate Pal’Norte es uno de los festivales más importantes de
+                México, ubicado en Monterrey. Con artistas internacionales y
+                nacionales, es un punto de encuentro para amantes de la música
+                de todos los géneros.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/axe.jpg" alt="Festival Axe Ceremonia" />
+            <div class="card-content">
+              <h4>Axe Ceremonia</h4>
+              <p>
+                Axe Ceremonia es un festival alternativo que reúne lo mejor de
+                la música emergente y propuestas artísticas innovadoras. Se
+                celebra en Toluca, México, con un enfoque único en la
+                creatividad.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/corona.jpg" alt="Festival Corona Capital" />
+            <div class="card-content">
+              <h4>Corona Capital</h4>
+              <p>
+                Corona Capital es un festival de renombre en la Ciudad de México
+                que atrae a las mejores bandas de rock y música indie del mundo,
+                convirtiéndose en un evento imperdible para los fans del género.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/glaston.webp" alt="Festival Glastonbury" />
+            <div class="card-content">
+              <h4>Glastonbury</h4>
+              <p>
+                Glastonbury es uno de los festivales más históricos de
+                Inglaterra, conocido por su enfoque en música contemporánea y
+                actuaciones legendarias en el hermoso entorno de Pilton.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/edc.jpg" alt="Festival EDC las vegas" />
+            <div class="card-content">
+              <h4>EDC Las Vegas</h4>
+              <p>
+                EDC Las Vegas (Electric Daisy Carnival) es el festival de música
+                electrónica más grande del mundo, transformando Las Vegas en un
+                espectáculo de luces, energía y vibraciones únicas.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/rockinrio.jpeg" alt="Festival Rock in Rio" />
+            <div class="card-content">
+              <h4>Rock in Rio</h4>
+              <p>
+                Rock in Rio combina música, cultura y entretenimiento en Río de
+                Janeiro, Brasil, reuniendo a artistas de talla mundial y
+                ofreciendo una experiencia única a sus asistentes.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/primavera.webp" alt="Festival Primavera Sound" />
+            <div class="card-content">
+              <h4>Primavera Sound</h4>
+              <p>
+                Primavera Sound, celebrado en Barcelona, España, es reconocido
+                por su alineación diversa que mezcla música alternativa, indie y
+                electrónica en un entorno mediterráneo espectacular.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/sxsw.jpg" alt="Festival SXSW Music" />
+            <div class="card-content">
+              <h4>SXSW Music</h4>
+              <p>
+                SXSW Music, ubicado en Austin, USA, es un festival que celebra
+                la innovación musical y cultural, ofreciendo conciertos y
+                conferencias de vanguardia que exploran lo mejor de la música
+                global.
+              </p>
+            </div>
+          </div>
+          <div class="festival-card">
+            <img src="img/fuji.webp" alt="Festival Fuji Rock" />
+            <div class="card-content">
+              <h4>Fuji Rock</h4>
+              <p>
+                Fuji Rock, celebrado en Niigata, Japón, es un festival que
+                combina música en vivo de artistas internacionales con un
+                ambiente único rodeado por la naturaleza de las montañas
+                japonesas.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2024 Festivales de Música. Todos los derechos reservados.</p>
+    </footer>
+  </body>
+</html>
